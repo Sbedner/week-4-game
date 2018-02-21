@@ -1,0 +1,129 @@
+body {
+    background-image: url("../images/stars.jpg");
+    }
+
+article {
+    margin-left: 3%;
+    margin-top: 2%;
+    background-color: rgb(166, 180, 180);
+    border-radius: 8px;
+    width:50%;
+    height:300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:rgb(166, 180, 180);
+    border-radius: 8px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:3%;
+    width:40%;
+    height:60px;
+}
+
+#numberBoard {
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:3%;
+    border-radius: 8px;
+    width:220px;
+    height: 160px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+
+#scoreBoard{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    width:240px;
+    height:160px;
+    margin-left: 18%;
+    margin-top: -8.5%;
+    font-size: 40px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+.buttons{
+    margin-left: 3%;
+}
+
+.button1{
+        /* background : url("submit.png") no-repeat center center; */
+        background-color: whitesmoke;
+        width : 100px;
+        height :100px;
+        border : none;
+        border-radius: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url("../images/ruby.png") no-repeat center center;
+        /* color : transparent; */
+    }
+.button2{
+      /* background : url("submit.png") no-repeat center center; */
+      background-color:whitesmoke;
+      width : 100px;
+      height :100px;
+      border : none;
+      border-radius: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url("../images/diamond.png") no-repeat center center;
+      /* color : transparent; */
+}
+.button3{
+     /* background : url("submit.png") no-repeat center center; */
+     background-color:whitesmoke;
+     width : 100px;
+     height :100px;
+     border : none;
+     border-radius: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     background: url("../images/Emerald.png") no-repeat center center;
+     /* color : transparent; */
+}
+.button4{
+     /* background : url("submit.png") no-repeat center center; */
+     background-color:whitesmoke;
+     width : 100px;
+     height :100px;
+     border : none;
+     border-radius: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     /* color : transparent; */
+}
+
+#guessHeader{
+    background-color:whitesmoke;
+    height:30px;
+    width:170px;
+    margin-left:3%;
+    margin-top:0.5%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#guessBoard{
+    background-color: whitesmoke;
+    height:80px;
+    width:170px;
+    margin-left:3%;
+    margin-top:0.5%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
