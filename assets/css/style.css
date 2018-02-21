@@ -10,6 +10,8 @@ article {
     width:50%;
     height:300px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 1%;
 }
 
 header {
@@ -21,8 +23,32 @@ header {
     align-items: center;
     justify-content: center;
     margin-left:3%;
+    margin-top:1%;
     width:40%;
     height:60px;
+    /* header animation */
+    animation-duration: 1200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:blink 1200ms infinite;
+     /* Safari and Chrome */
+}
+@keyframes blink {
+    from {
+        color:black;
+    }
+    to {
+        color:white;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        color:black;
+    }
+    to {
+        color:silver;
+    }
 }
 
 #numberBoard {
@@ -59,7 +85,6 @@ header {
 }
 
 .button1{
-        /* background : url("submit.png") no-repeat center center; */
         background-color: whitesmoke;
         width : 100px;
         height :100px;
@@ -67,10 +92,8 @@ header {
         border-radius: 8px;
         font-family: Arial, Helvetica, sans-serif;
         background: url("../images/ruby.png") no-repeat center center;
-        /* color : transparent; */
     }
 .button2{
-      /* background : url("submit.png") no-repeat center center; */
       background-color:whitesmoke;
       width : 100px;
       height :100px;
@@ -78,10 +101,8 @@ header {
       border-radius: 8px;
       font-family: Arial, Helvetica, sans-serif;
       background: url("../images/diamond.png") no-repeat center center;
-      /* color : transparent; */
 }
 .button3{
-     /* background : url("submit.png") no-repeat center center; */
      background-color:whitesmoke;
      width : 100px;
      height :100px;
@@ -89,17 +110,16 @@ header {
      border-radius: 8px;
      font-family: Arial, Helvetica, sans-serif;
      background: url("../images/Emerald.png") no-repeat center center;
-     /* color : transparent; */
 }
 .button4{
-     /* background : url("submit.png") no-repeat center center; */
+
      background-color:whitesmoke;
      width : 100px;
      height :100px;
      border : none;
      border-radius: 8px;
      font-family: Arial, Helvetica, sans-serif;
-     /* color : transparent; */
+     background: url("../images/sapphire.png") no-repeat center center;
 }
 
 #guessHeader{

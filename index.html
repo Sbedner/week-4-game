@@ -19,33 +19,58 @@
 </head>
 
 <body>
+  <!-- Instructions -->
   <header>CrystalsCollector!
   </header>
   <article>
+    <h2>INSTRUCTIONS</h2>
+    <br/>
+    <hr>
+    <p>Click any crystal to begin.</p>
     <p>You will be given a random number at the start of the game.</p>
     <br/>
     <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to the random number. </p>
+    <p>Dont go over or you lose. GOOD LUCK!</p>
     <br/>
   </article>
   <div>
     <br/>
   </div>
 
+
+
+  <!-- random game number player must match to win -->
   <div id="numberBoard">
     0
   </div>
 
+
+
+  <!-- scoreboard -->
   <div id="scoreBoard">
-   <p>WINS:<a id="wins"></a></p> 
-   <p>LOSSES:<a id="losses">0</a></p>
+    <p>WINS:
+      <a id="wins">0</a>
+    </p>
+    <p>LOSSES:
+      <a id="losses">0</a>
+    </p>
   </div>
   <br/>
+
+
+
+  <!-- crystal buttons -->
   <div class="buttons">
     <button class="button1"></button>
     <button class="button2"></button>
     <button class="button3"></button>
     <button class="button4"></button>
   </div>
+
+
+
+  <!-- Current player header and total -->
   <div id="guessHeader">
     <p>Your Score Is:</p>
   </div>
@@ -60,5 +85,4 @@
 
 
 </body>
-
 </html>

@@ -1,18 +1,5 @@
 
-//how to make random number odd or even
-
-//how to add array 
-//
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-//
+//JS for crystal challenge game
 
 // Variables and Arrays
 var jewel1 = 1 + Math.floor(Math.random() * 10);
@@ -29,10 +16,12 @@ var playerNum = [];
 var winCount = 0;
 var lossCount = 0;
 
+// Generate random game number onclick and update html
 $(document).on('click', function () {
     $("#numberBoard").text(randomGameNum);
 })
 
+// Win game function
 function win() {
     if (randomGameNum === sum) {
         winCount += 1;
@@ -43,6 +32,7 @@ function win() {
 
 }
 
+// Lose game function
 function lose() {
     if (randomGameNum < sum) {
         lossCount += 1;
@@ -55,33 +45,35 @@ function lose() {
 
 
 
+// function to sum total of player numbers
 function addArray() {
     sum = 0
     for (i = 0; i < playerNum.length; i++) {
         sum += playerNum[i];
 
     }
+    // update html with player number
     $("#guessBoard").text(sum);
     win();
     lose();
 }
 
+// Resets game for next round
 function reset() {
-    jewel1 = 1 + Math.floor(Math.random() * 10);
-    jewel2 = 1 + Math.floor(Math.random() * 5);
-    jewel3 = 1 + Math.floor(Math.random() * 7);
-    jewel4 = 1 + Math.floor(Math.random() * 1);
-    randomGameNum = 1 + Math.floor(Math.random() * 70);
+    jewel1 = 1 + Math.floor(Math.random() * 12);
+    jewel2 = 1 + Math.floor(Math.random() * 12);
+    jewel3 = 1 + Math.floor(Math.random() * 12);
+    jewel4 = 1 + Math.floor(Math.random() * 12);
+    randomGameNum = 1 + Math.floor(Math.random() * 120);
     sum = 0;
     playerNum.length = 0;
-    alert("this is running")
+    alert("GET READY TO PLAY AGAIN!!!")
     $("#guessBoard").text(sum);
     $("#numberBoard").text(randomGameNum);
 
 }
 
-// event listner for element button
-
+// event listner for element buttons. 
 $(document).on('click', '.button1', function () {
     // push to array
     console.log(randomGameNum);
