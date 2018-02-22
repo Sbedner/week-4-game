@@ -2,11 +2,11 @@
 //JS for crystal challenge game
 
 // Variables and Arrays
-var jewel1 = 1 + Math.floor(Math.random() * 10);
-var jewel2 = 1 + Math.floor(Math.random() * 5);
-var jewel3 = 1 + Math.floor(Math.random() * 7);
-var jewel4 = 1 + Math.floor(Math.random() * 1);
-var randomGameNum = 1 + Math.floor(Math.random() * 70);
+var jewel1 = 1 + Math.floor(Math.random() * 12)+1;
+var jewel2 = 1 + Math.floor(Math.random() * 12)+1;
+var jewel3 = 1 + Math.floor(Math.random() * 12)+1;
+var jewel4 = 1 + Math.floor(Math.random() * 12)+1;
+var randomGameNum = 1 + Math.floor(Math.random() * 101)+19;
 var sum = 0;
 var playerNum = [];
 
@@ -60,16 +60,16 @@ function addArray() {
 
 // Resets game for next round
 function reset() {
-    jewel1 = 1 + Math.floor(Math.random() * 12);
-    jewel2 = 1 + Math.floor(Math.random() * 12);
-    jewel3 = 1 + Math.floor(Math.random() * 12);
-    jewel4 = 1 + Math.floor(Math.random() * 12);
-    randomGameNum = 1 + Math.floor(Math.random() * 120);
+    jewel1 = 1 + Math.floor(Math.random() * 12)+1;
+    jewel2 = 1 + Math.floor(Math.random() * 12)+1;
+    jewel3 = 1 + Math.floor(Math.random() * 12)+1;
+    jewel4 = 1 + Math.floor(Math.random() * 12)+1;
+    randomGameNum = 1 + Math.floor(Math.random() * 101)+19;
     sum = 0;
     playerNum.length = 0;
-    alert("GET READY TO PLAY AGAIN!!!")
     $("#guessBoard").text(sum);
     $("#numberBoard").text(randomGameNum);
+    alert("GET READY TO PLAY AGAIN!!!");
 
 }
 
